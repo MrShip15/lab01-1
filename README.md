@@ -155,7 +155,7 @@ $ cd boost_1_69_0
 $ pwd
 /c/Users/User/scorpy2013/scorpy2013/boost_1_69_0 
 
- $ ls -f . | wc -l # Считаем количество файлов в директории **boost**
+ $ ls -f . | wc -l # Считаем количество файлов в **boost**
 20
 
 $ find . -type f | wc -l 61191 5.
@@ -163,10 +163,10 @@ User@ScorpyDesktop MINGW64 ~/scorpy2013/scorpy2013/boost_1_69_0 (master)
 $ find . -type f -name '*.h' | wc -l # Находим все файлы с расширением '*.h' (заголовочный файл)
 296 
 User@ScorpyDesktop MINGW64 ~/scorpy2013/scorpy2013/boost_1_69_0 (master) 
-$ find . -type f -name '*.cpp' | wc -l  # Находим все файлы с расширением '*.сpp' (файл на с++)
+$ find . -type f -name '*.cpp' | wc -l  # Находим все файлы с расширением '*.сpp' (файл C++)
 13774 
 User@ScorpyDesktop MINGW64 ~/scorpy2013/scorpy2013/boost_1_69_0 (master) 
-$ find . -type f '!' -name '*.cpp' -a '!' -name '*.cpp' | wc -l # Находим все файлы, кроме расширения '*.cpp' и '*.cpp'
+$ find . -type f '!' -name '*.cpp' -a '!' -name '*.cpp' | wc -l # Находим все остальные файлы
 47121 
 6.
 $ find . -type f -name 'any.hpp' # Полный путь до файла 'any.hpp' 
@@ -189,7 +189,7 @@ mv boost_1_69_0/=boost_output/lib/ boost-libs/
 
 mv boost_1_69_0/=boost_output/lib/ boost-libs/# Перенесем статические библиотеки в директорию ~/boost-libs
 
-$ find . type -f -exec du -h {} +; # дисковое пространство файла в директории
+$ find . type -f -exec du -h {} +; # дисковое пространство файла 
 100K ./libboost_stacktrace_basic.a
 2,4M ./libboost_wave.dylib
 7,8M ./libboost_math_tr1.a
