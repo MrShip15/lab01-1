@@ -130,11 +130,11 @@ $ gist REPORT.md
 - [x] 10. Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
 - [x] 11. Найдите *топ10* самых "тяжёлых".
 Homework
-
+```
 1 sh --2020-04-11 19:25:05-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz Resolving sourceforge.net (sourceforge.net)... 216.105.38.13 Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 301 Moved Permanently Location: https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/ [following] --2020-04-11 19:25:07-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/ Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/download [following] --2020-04-11 19:25:11-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/download Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://downloads.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz?r=&ts=1586252046&use_mirror=netix [following] --2020-04-11 19:25:13-- https://downloads.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz?r=&ts=1586252046&use_mirror=netix Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.105.38.13 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://netix.dl.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz [following] --2020-04-11 19:25:15-- https://netix.dl.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz Resolving netix.dl.sourceforge.net (netix.dl.sourceforge.net)... 87.121.121.2 Connecting to netix.dl.sourceforge.net (netix.dl.sourceforge.net)|87.121.121.2|:443... connected. HTTP request sent, awaiting response... 200 OK Length: 111710205 (107M) [application/x-gzip] Saving to: 'boost_1_69_0.tar.gz' boost_1_69_0.tar.gz 100%[================================================================================================================>] 106,53M 112KB/s in 12m 10s 2020-04-11 19:37:26 (128 KB/s) - 'boost_1_69_0.tar.gz' saved [111710205/111710205]
-
+```
 2.
-sh
+```sh
 $ tar -xf boost_1_69_0.tar.gz # распаковываем архив
 $ cd boost_1_69_0 
 $ pwd
