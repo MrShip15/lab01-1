@@ -9,6 +9,7 @@
 - [x] 1. Ознакомиться со ссылками учебного материала
 - [x] 2. Выполнить инструкцию учебного материала
 - [x] 3. Составить отчет и отправить ссылку личным сообщением в **Slack**
+```
 
 ## Tutorial
 
@@ -23,6 +24,7 @@ $ mkdir -p workspace/tasks/
 $ mkdir -p workspace/projects/ 
 $ mkdir -p workspace/reports/ 
 $ cd workspace
+```
 # Debian
 $ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz # загружаем с помощью утилиты wget пакет nodej --2020-04-11 18:20:27-- https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz Resolving nodejs.org (nodejs.org)... 104.20.22.46, 104.20.23.46 Connecting to nodejs.org (nodejs.org)|104.20.22.46|:443... connected. HTTP request sent, awaiting response... 200 OK Length: 9356460 (8,9M) [application/x-xz] Saving to: 'node-v6.11.5-linux-x64.tar.xz' node-v6.11.5-linux-x64.tar.xz 100%[================================================================================================================>] 8,92M 124KB/s in 73s 2020-04-11 18:23:18 (128 KB/s) - 'node-v6.11.5-linux-x64.tar.xz' saved [9356460/9356460]
 $ tar -xf node-v6.11.5-linux-x64.tar.xz 
