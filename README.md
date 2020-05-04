@@ -23,17 +23,21 @@ $ mkdir -p workspace/tasks/
 $ mkdir -p workspace/projects/ 
 $ mkdir -p workspace/reports/ 
 $ cd workspace
-
+```
 # Debian
 $ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz # загружаем с помощью утилиты wget пакет nodej --2020-04-11 18:20:27-- https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz Resolving nodejs.org (nodejs.org)... 104.20.22.46, 104.20.23.46 Connecting to nodejs.org (nodejs.org)|104.20.22.46|:443... connected. HTTP request sent, awaiting response... 200 OK Length: 9356460 (8,9M) [application/x-xz] Saving to: 'node-v6.11.5-linux-x64.tar.xz' node-v6.11.5-linux-x64.tar.xz 100%[================================================================================================================>] 8,92M 124KB/s in 73s 2020-04-11 18:23:18 (128 KB/s) - 'node-v6.11.5-linux-x64.tar.xz' saved [9356460/9356460]
-
+```
 $ tar -xf node-v6.11.5-linux-x64.tar.xz 
 $ rm -rf node-v6.11.5-linux-x64.tar.xz 
 $ mv node-v6.11.5-linux-x64 node
 $ ls node/bin node npm
+```
 $ echo ${PATH} /mingw64/bin:/usr/bin:/c/Users/User/bin:/c/Ruby26-x64/bin:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Microsoft SQL Server/110/Tools/Binn:/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/c/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin:/c/Program Files/Microsoft SQL Server/110/DTS/Binn:/c/Program Files/dotnet:/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/c/Program Files/MATLAB/R2019b/bin:/cmd:/mingw64/bin:/usr/bin:/c/Program Files/CMake/bin:/c/Program Files/wget
+```
 $ export PATH=${PATH}:pwd/node/bin
+```
 $ echo ${PATH} /mingw64/bin:/usr/bin:/c/Users/User/bin:/c/Ruby26-x64/bin:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Microsoft SQL Server/110/Tools/Binn:/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/c/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin:/c/Program Files/Microsoft SQL Server/110/DTS/Binn:/c/Program Files/dotnet:/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/c/Program Files/MATLAB/R2019b/bin:/cmd:/mingw64/bin:/usr/bin:/c/Program Files/CMake/bin:/c/Program Files/wget:/c/Users/User/scorpy2013/scorpy2013/node/bin
+```
 $ mkdir scripts
 $ cat > scripts/activate<<EOF export PATH=${PATH}:pwd/node/bin EOF
 $ source scripts/activate 
@@ -126,8 +130,9 @@ $ gist REPORT.md
 - [x] 10. Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
 - [x] 11. Найдите *топ10* самых "тяжёлых".
 Homework
+```
 1 sh --2020-04-11 19:25:05-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz Resolving sourceforge.net (sourceforge.net)... 216.105.38.13 Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 301 Moved Permanently Location: https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/ [following] --2020-04-11 19:25:07-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/ Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/download [following] --2020-04-11 19:25:11-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/download Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://downloads.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz?r=&ts=1586252046&use_mirror=netix [following] --2020-04-11 19:25:13-- https://downloads.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz?r=&ts=1586252046&use_mirror=netix Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.105.38.13 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://netix.dl.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz [following] --2020-04-11 19:25:15-- https://netix.dl.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz Resolving netix.dl.sourceforge.net (netix.dl.sourceforge.net)... 87.121.121.2 Connecting to netix.dl.sourceforge.net (netix.dl.sourceforge.net)|87.121.121.2|:443... connected. HTTP request sent, awaiting response... 200 OK Length: 111710205 (107M) [application/x-gzip] Saving to: 'boost_1_69_0.tar.gz' boost_1_69_0.tar.gz 100%[================================================================================================================>] 106,53M 112KB/s in 12m 10s 2020-04-11 19:37:26 (128 KB/s) - 'boost_1_69_0.tar.gz' saved [111710205/111710205]
-
+```
 2.
 sh
 $ tar -xf boost_1_69_0.tar.gz # распаковываем архив
