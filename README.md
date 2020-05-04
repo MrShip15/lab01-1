@@ -9,7 +9,6 @@
 - [x] 1. Ознакомиться со ссылками учебного материала
 - [x] 2. Выполнить инструкцию учебного материала
 - [x] 3. Составить отчет и отправить ссылку личным сообщением в **Slack**
-```
 
 ## Tutorial
 
@@ -24,9 +23,10 @@ $ mkdir -p workspace/tasks/
 $ mkdir -p workspace/projects/ 
 $ mkdir -p workspace/reports/ 
 $ cd workspace
-```
+
 # Debian
 $ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz # загружаем с помощью утилиты wget пакет nodej --2020-04-11 18:20:27-- https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz Resolving nodejs.org (nodejs.org)... 104.20.22.46, 104.20.23.46 Connecting to nodejs.org (nodejs.org)|104.20.22.46|:443... connected. HTTP request sent, awaiting response... 200 OK Length: 9356460 (8,9M) [application/x-xz] Saving to: 'node-v6.11.5-linux-x64.tar.xz' node-v6.11.5-linux-x64.tar.xz 100%[================================================================================================================>] 8,92M 124KB/s in 73s 2020-04-11 18:23:18 (128 KB/s) - 'node-v6.11.5-linux-x64.tar.xz' saved [9356460/9356460]
+```
 $ tar -xf node-v6.11.5-linux-x64.tar.xz 
 $ rm -rf node-v6.11.5-linux-x64.tar.xz 
 $ mv node-v6.11.5-linux-x64 node
@@ -46,11 +46,10 @@ Done installing documentation for gist after 0 seconds
 1 gem installed
 $ (umask 0077 && echo ${GIST_TOKEN} > ~/.gist)
 
-```
 
 ## Report
 
-```sh
+sh
 $ export LAB_NUMBER=01
 
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER}
@@ -67,7 +66,7 @@ $ cp tasks/lab${LAB_NUMBER}/README.md reports/lab${LAB_NUMBER}/REPORT.md
 $ cd reports/lab${LAB_NUMBER}
 $ edit REPORT.md
 $ gist REPORT.md
-```
+
 
 ## Links
 
@@ -127,7 +126,7 @@ $ gist REPORT.md
 - [x] 10. Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
 - [x] 11. Найдите *топ10* самых "тяжёлых".
 Homework
-1 ```sh --2020-04-11 19:25:05-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz Resolving sourceforge.net (sourceforge.net)... 216.105.38.13 Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 301 Moved Permanently Location: https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/ [following] --2020-04-11 19:25:07-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/ Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/download [following] --2020-04-11 19:25:11-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/download Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://downloads.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz?r=&ts=1586252046&use_mirror=netix [following] --2020-04-11 19:25:13-- https://downloads.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz?r=&ts=1586252046&use_mirror=netix Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.105.38.13 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://netix.dl.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz [following] --2020-04-11 19:25:15-- https://netix.dl.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz Resolving netix.dl.sourceforge.net (netix.dl.sourceforge.net)... 87.121.121.2 Connecting to netix.dl.sourceforge.net (netix.dl.sourceforge.net)|87.121.121.2|:443... connected. HTTP request sent, awaiting response... 200 OK Length: 111710205 (107M) [application/x-gzip] Saving to: 'boost_1_69_0.tar.gz' boost_1_69_0.tar.gz 100%[================================================================================================================>] 106,53M 112KB/s in 12m 10s 2020-04-11 19:37:26 (128 KB/s) - 'boost_1_69_0.tar.gz' saved [111710205/111710205]
+1 sh --2020-04-11 19:25:05-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz Resolving sourceforge.net (sourceforge.net)... 216.105.38.13 Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 301 Moved Permanently Location: https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/ [following] --2020-04-11 19:25:07-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/ Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/download [following] --2020-04-11 19:25:11-- https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz/download Connecting to sourceforge.net (sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://downloads.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz?r=&ts=1586252046&use_mirror=netix [following] --2020-04-11 19:25:13-- https://downloads.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz?r=&ts=1586252046&use_mirror=netix Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 216.105.38.13 Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|216.105.38.13|:443... connected. HTTP request sent, awaiting response... 302 Found Location: https://netix.dl.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz [following] --2020-04-11 19:25:15-- https://netix.dl.sourceforge.net/project/boost/boost/1.69.0/boost_1_69_0.tar.gz Resolving netix.dl.sourceforge.net (netix.dl.sourceforge.net)... 87.121.121.2 Connecting to netix.dl.sourceforge.net (netix.dl.sourceforge.net)|87.121.121.2|:443... connected. HTTP request sent, awaiting response... 200 OK Length: 111710205 (107M) [application/x-gzip] Saving to: 'boost_1_69_0.tar.gz' boost_1_69_0.tar.gz 100%[================================================================================================================>] 106,53M 112KB/s in 12m 10s 2020-04-11 19:37:26 (128 KB/s) - 'boost_1_69_0.tar.gz' saved [111710205/111710205]
 
 2.
 ```sh
