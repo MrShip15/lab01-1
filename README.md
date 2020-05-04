@@ -30,7 +30,7 @@ $ mkdir -p workspace/reports/
 $ cd workspace
 
 # Debian
-$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
+$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz  # загружаем с помощью утилиты wget пакет nodej
 --2020-04-11 18:20:27--  https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
 Resolving nodejs.org (nodejs.org)... 104.20.22.46, 104.20.23.46
 Connecting to nodejs.org (nodejs.org)|104.20.22.46|:443... connected.
