@@ -11,7 +11,7 @@
 - [x] 3. Составить отчет и отправить ссылку личным сообщением в **Slack**
 
 ## Tutorial
-
+```
 $ export GITHUB_USERNAME=scorpy2013 
 $ export GIST_TOKEN=0dc94d9c9fe7556bc832fbc82e5b22c21b58328c 
 $ alias edit=vs
