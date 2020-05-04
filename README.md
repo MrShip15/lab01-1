@@ -12,57 +12,36 @@
 
 ## Tutorial
 
-$ export GITHUB_USERNAME=scorpy2013
+$ export GITHUB_USERNAME=scorpy2013 
 $ export GIST_TOKEN=0dc94d9c9fe7556bc832fbc82e5b22c21b58328c 
 $ alias edit=vs
-
-$ mkdir -p ${GITHUB_USERNAME}/workspace
-$ cd ${GITHUB_USERNAME}/workspace
-$ pwd
-/c/Users/User/Documents/Vuse Downloads/ТиМП/workspace
-$ cd ..
-$ pwd
-/c/Users/User/Documents/Vuse Downloads/ТиМП
-
-$ mkdir -p workspace/tasks/
-$ mkdir -p workspace/projects/
-$ mkdir -p workspace/reports/
+$ mkdir -p ${GITHUB_USERNAME}/workspace 
+$ cd ${GITHUB_USERNAME}/workspace 
+$ pwd /c/Users/User/Documents/Vuse Downloads/ТиМП/workspace 
+$ cd .. $ pwd /c/Users/User/Documents/Vuse Downloads/ТиМП
+$ mkdir -p workspace/tasks/ 
+$ mkdir -p workspace/projects/ 
+$ mkdir -p workspace/reports/ 
 $ cd workspace
-
 # Debian
-$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz  # загружаем с помощью утилиты wget пакет nodej
---2020-04-11 18:20:27--  https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
-Resolving nodejs.org (nodejs.org)... 104.20.22.46, 104.20.23.46
-Connecting to nodejs.org (nodejs.org)|104.20.22.46|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 9356460 (8,9M) [application/x-xz]
-Saving to: 'node-v6.11.5-linux-x64.tar.xz'
-node-v6.11.5-linux-x64.tar.xz                      100%[================================================================================================================>]   8,92M   124KB/s    in 73s
-2020-04-11 18:23:18 (128 KB/s) - 'node-v6.11.5-linux-x64.tar.xz' saved [9356460/9356460]
-
-$ tar -xf node-v6.11.5-linux-x64.tar.xz
-$ rm -rf node-v6.11.5-linux-x64.tar.xz
+$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz # загружаем с помощью утилиты wget пакет nodej --2020-04-11 18:20:27-- https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz Resolving nodejs.org (nodejs.org)... 104.20.22.46, 104.20.23.46 Connecting to nodejs.org (nodejs.org)|104.20.22.46|:443... connected. HTTP request sent, awaiting response... 200 OK Length: 9356460 (8,9M) [application/x-xz] Saving to: 'node-v6.11.5-linux-x64.tar.xz' node-v6.11.5-linux-x64.tar.xz 100%[================================================================================================================>] 8,92M 124KB/s in 73s 2020-04-11 18:23:18 (128 KB/s) - 'node-v6.11.5-linux-x64.tar.xz' saved [9356460/9356460]
+$ tar -xf node-v6.11.5-linux-x64.tar.xz 
+$ rm -rf node-v6.11.5-linux-x64.tar.xz 
 $ mv node-v6.11.5-linux-x64 node
-
-$ ls node/bin
-node  npm
-
-$ echo ${PATH} 
-/mingw64/bin:/usr/bin:/c/Users/User/bin:/c/Ruby26-x64/bin:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Microsoft SQL Server/110/Tools/Binn:/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/c/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin:/c/Program Files/Microsoft SQL Server/110/DTS/Binn:/c/Program Files/dotnet:/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/c/Program Files/MATLAB/R2019b/bin:/cmd:/mingw64/bin:/usr/bin:/c/Program Files/CMake/bin:/c/Program Files/wget
-
-$ export PATH=${PATH}:`pwd`/node/bin
-
-$ echo ${PATH}
-/mingw64/bin:/usr/bin:/c/Users/User/bin:/c/Ruby26-x64/bin:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Microsoft SQL Server/110/Tools/Binn:/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/c/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin:/c/Program Files/Microsoft SQL Server/110/DTS/Binn:/c/Program Files/dotnet:/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/c/Program Files/MATLAB/R2019b/bin:/cmd:/mingw64/bin:/usr/bin:/c/Program Files/CMake/bin:/c/Program Files/wget:/c/Users/User/scorpy2013/scorpy2013/node/bin
-
+$ ls node/bin node npm
+$ echo ${PATH} /mingw64/bin:/usr/bin:/c/Users/User/bin:/c/Ruby26-x64/bin:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Microsoft SQL Server/110/Tools/Binn:/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/c/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin:/c/Program Files/Microsoft SQL Server/110/DTS/Binn:/c/Program Files/dotnet:/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/c/Program Files/MATLAB/R2019b/bin:/cmd:/mingw64/bin:/usr/bin:/c/Program Files/CMake/bin:/c/Program Files/wget
+$ export PATH=${PATH}:pwd/node/bin
+$ echo ${PATH} /mingw64/bin:/usr/bin:/c/Users/User/bin:/c/Ruby26-x64/bin:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Microsoft SQL Server/110/Tools/Binn:/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/c/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin:/c/Program Files/Microsoft SQL Server/110/DTS/Binn:/c/Program Files/dotnet:/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/c/Program Files/MATLAB/R2019b/bin:/cmd:/mingw64/bin:/usr/bin:/c/Program Files/CMake/bin:/c/Program Files/wget:/c/Users/User/scorpy2013/scorpy2013/node/bin
 $ mkdir scripts
-
-$ cat > scripts/activate<<EOF
-export PATH=\${PATH}:`pwd`/node/bin
-EOF
-
-$ source scripts/activate
+$ cat > scripts/activate<<EOF export PATH=${PATH}:pwd/node/bin EOF
+$ source scripts/activate 
+$ gem install gist 
+$ (umask 0077 && echo ${GIST_TOKEN} > ~/.gist)
 $ gem install gist
+Successfully installed gist-5.1.0
+Parsing documentation for gist-5.1.0
+Done installing documentation for gist after 0 seconds
+1 gem installed
 $ (umask 0077 && echo ${GIST_TOKEN} > ~/.gist)
 
 ```
