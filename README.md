@@ -1,7 +1,7 @@
 ## Laboratory work I
-
+```
 <a href="https://yandex.ru/efir/?stream_id=vsVJzkz4i9-s"><img src="https://raw.githubusercontent.com/tp-labs/lab01/master/preview.png" width="640"/></a>
-
+```
 Данная лабораторная работа посвещена изучению утилит для разработки проектов
 
 ## Tasks
