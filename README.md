@@ -36,7 +36,7 @@ $ echo ${PATH} /mingw64/bin:/usr/bin:/c/Users/User/bin:/c/Ruby26-x64/bin:/c/Prog
 ```
 $ export PATH=${PATH}:pwd/node/bin
 ```
-
+```
 $ echo ${PATH} /mingw64/bin:/usr/bin:/c/Users/User/bin:/c/Ruby26-x64/bin:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Microsoft SQL Server/110/Tools/Binn:/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/c/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin:/c/Program Files/Microsoft SQL Server/110/DTS/Binn:/c/Program Files/dotnet:/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/c/Program Files/MATLAB/R2019b/bin:/cmd:/mingw64/bin:/usr/bin:/c/Program Files/CMake/bin:/c/Program Files/wget:/c/Users/User/scorpy2013/scorpy2013/node/bin
 
 
